@@ -98,7 +98,7 @@ MCMC.targets["standard"] = {
 const mixtureComponents = [
   new MultivariateNormal(matrix([[-1.5], [-1.5]]), eye(2).scale(0.8)),
   new MultivariateNormal(matrix([[1.5], [1.5]]), eye(2).scale(0.8)),
-  new MultivariateNormal(matrix([[-2], [2]]), eye(2).scale(0.5)),
+  new MultivariateNormal(matrix([[-2], [2]]), eye(2).scale(0.1)),
 ];
 MCMC.targetNames.push("multimodal");
 MCMC.targets["multimodal"] = {
